@@ -54,11 +54,14 @@
     "develop": "gatsby develop",
     "lint": "eslint --ext .js,.jsx .",
     "prettier": "prettier --write \"src/**/*.{js,jsx,css}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "push": "gh-pages -d public -b master",
+    "deploy": "yarn build && yarn push"
   },
   "devDependencies": {
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^1.12.1"
   }
 }
